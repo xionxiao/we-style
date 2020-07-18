@@ -1,2 +1,19 @@
 # we-style
-wechart miniapp style
+
+Common Style for wechart miniapp
+
+## How to build
+
+```shell
+npm install -g less
+
+lessc style.less dist/stle.wxss
+```
+
+## How to use
+
+import style.wxss in your wxss file, app.wxss e.g.
+
+```javascript
+@import 'dist/style.wxss'
+```
