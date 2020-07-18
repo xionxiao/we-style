@@ -1,0 +1,147 @@
+@percentage: 25, 50, 75, 100;
+
+each(@percentage, {
+    .w-@{value} {
+        width: percentage(@value / 100)
+    }
+});
+
+each(@percentage, {
+    .h-@{value} {
+        height: percentage(@value / 100)
+    }
+});
+
+@decimal: 25, 50, 75;
+
+each(@decimal, {
+    .m-0@{value} {
+        margin: unit(@value/100, rem);
+    }
+    .mt-0@{value} {
+        margin-top: unit(@value/100, rem)
+    }
+    .mb-0@{value} {
+        margin-bottom: unit(@value/100, rem)
+    }
+    .mr-0@{value} {
+        margin-right: unit(@value/100, rem);
+    }
+    .ml-0@{value} {
+        margin-left: unit(@value/100, rem);
+    }
+    .p-0@{value} {
+        padding: unit(@value/100, rem);
+    }
+    .pt-0@{value} {
+        padding-top: unit(@value/100, rem);
+    }
+    .pb-0@{value} {
+        padding-bottom: unit(@value/100, rem);
+    }
+    .pr-0@{value} {
+        padding-right: unit(@value/100, rem);
+    }
+    .pl-0@{value} {
+        padding-left: unit(@value/100, rem);
+    }
+})
+
+each(range(6), {
+    .m-@{value} {
+        margin: unit(@value, rem);
+    }
+    .mt-@{value} {
+        margin-top: unit(@value, rem)
+    }
+    .mb-@{value} {
+        margin-bottom: unit(@value, rem)
+    }
+    .mr-@{value} {
+        margin-right: unit(@value, rem);
+    }
+    .ml-@{value} {
+        margin-left: unit(@value, rem);
+    }
+    .p-@{value} {
+        padding: unit(@value, rem);
+    }
+    .pt-@{value} {
+        padding-top: unit(@value, rem);
+    }
+    .pb-@{value} {
+        padding-bottom: unit(@value, rem);
+    }
+    .pr-@{value} {
+        padding-right: unit(@value, rem);
+    }
+    .pl-@{value} {
+        padding-left: unit(@value, rem);
+    }
+})
+
+each(range(20, 40, 2), {
+    f-@{value} {
+        font-size: unit(@value, rpx);
+    }
+})
+
+.text {
+    &-ellipsis {
+        text-overflow:  ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex {
+    &-row {
+        .flex();
+        flex-direction: row;
+    }
+
+    &-col {
+        .flex();
+        flex-direction: column;
+    }
+    
+    &-start {
+        .flex();
+        justify-content: flex-start;
+    }
+    
+    &-end {
+        .flex();
+        justify-content: flex-end;
+    }
+
+    &-between {
+        .flex();
+        justify-content: space-between;
+    }
+
+    &-around {
+        .flex();
+        justify-content: space-around;
+    }
+}
+
+.button-clear {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: transparent;
+}
+
+.button-clear::after {
+    width: 0;
+    height: 0;
+    border: none;
+    content: "";
+}
