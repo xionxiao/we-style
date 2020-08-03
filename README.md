@@ -7,7 +7,7 @@ Common Style for wechart miniapp
 ```shell
 npm install -g less
 
-lessc style.less dist/stle.wxss
+lessc style.less dist/style.wxss
 ```
 
 ## How to use
