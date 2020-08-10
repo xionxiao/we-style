@@ -292,43 +292,52 @@
 .pl-6 {
   padding-left: 6rem;
 }
-f-20 {
+.f-20 {
   font-size: 20rpx;
 }
-f-22 {
+.f-22 {
   font-size: 22rpx;
 }
-f-24 {
+.f-24 {
   font-size: 24rpx;
 }
-f-26 {
+.f-26 {
   font-size: 26rpx;
 }
-f-28 {
+.f-28 {
   font-size: 28rpx;
 }
-f-30 {
+.f-30 {
   font-size: 30rpx;
 }
-f-32 {
+.f-32 {
   font-size: 32rpx;
 }
-f-34 {
+.f-34 {
   font-size: 34rpx;
 }
-f-36 {
+.f-36 {
   font-size: 36rpx;
 }
-f-38 {
+.f-38 {
   font-size: 38rpx;
 }
-f-40 {
+.f-40 {
   font-size: 40rpx;
 }
 .text-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 .flex {
   display: flex;
@@ -337,7 +346,7 @@ f-40 {
   display: flex;
   flex-direction: row;
 }
-.flex-col {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
