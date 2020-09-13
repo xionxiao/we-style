@@ -553,6 +553,24 @@
 .circle {
   border-radius: 50%;
 }
+.rounded {
+  border-radius: 16rpx;
+}
+.rounded-large {
+  border-radius: 32rpx;
+}
+.shadow {
+  box-shadow: 0 0 16rpx 0 #ddd;
+}
+.shadow-thick {
+  box-shadow: 0 0 32rpx 0 #ddd;
+}
+.drop-shadow {
+  box-shadow: 4rpx 4rpx 16rpx 0 #ddd;
+}
+.drop-shadow-thick {
+  box-shadow: 8rpx 8rpx 48rpx 0 #ddd;
+}
 .button-clear {
   margin: 0;
   padding: 0;
