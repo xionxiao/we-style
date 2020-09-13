@@ -1,8 +1,26 @@
 @percentage: 25, 50, 75, 100;
 @decimal: 25, 50, 75;
-@color: #07C160, #FA5151, #10AEFF, #B2B2B2, #F2F2F2;
-@primary: #07C160;
+@direction: top, right, bottom, left;
 
+/* reference: https://developers.weixin.qq.com/miniprogram/design */
+@color: {
+    primary: #10AEFF;
+    success: #07C160;
+    warning: #C87D2F;
+    danger: #FA5151;
+    secondary: #B2B2B2;
+    black: #000000;
+    white: #FFFFFF;
+    light: #F2F2F2;
+}
+
+each(@color, {
+        .@{key} {
+            color: @value;
+        }
+    }
+
+);
 
 each(@percentage, {
         .w-@{value} {
@@ -242,30 +260,18 @@ each(range(20, 40, 2), {
     &-left-1 {
         border-left: 1px solid black;
     }
-}
 
-.border-none {
-    border: 0;
-}
+    &-none {
+        border: 0;
+    }
 
-.border-light {
-    border-color: #F2F2F2;
-}
+    each(@color, {
+            &-@{key} {
+                border-color: @value;
+            }
+        }
 
-.border-gray {
-    border-color: #B2B2B2;
-}
-
-.border-green {
-    border-color: #07C160;
-}
-
-.border-red {
-    border-color: #FA5151;
-}
-
-.border-blue {
-    border-color: #10AEFF;
+    )
 }
 
 .button-clear {

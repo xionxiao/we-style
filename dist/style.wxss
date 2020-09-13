@@ -1,3 +1,28 @@
+/* reference: https://developers.weixin.qq.com/miniprogram/design */
+.primary {
+  color: #10AEFF;
+}
+.success {
+  color: #07C160;
+}
+.warning {
+  color: #C87D2F;
+}
+.danger {
+  color: #FA5151;
+}
+.secondary {
+  color: #B2B2B2;
+}
+.black {
+  color: #000000;
+}
+.white {
+  color: #FFFFFF;
+}
+.light {
+  color: #F2F2F2;
+}
 .w-25 {
   width: 25%;
 }
@@ -450,20 +475,29 @@
 .border-none {
   border: 0;
 }
-.border-light {
-  border-color: #F2F2F2;
+.border-primary {
+  border-color: #10AEFF;
 }
-.border-gray {
-  border-color: #B2B2B2;
-}
-.border-green {
+.border-success {
   border-color: #07C160;
 }
-.border-red {
+.border-warning {
+  border-color: #C87D2F;
+}
+.border-danger {
   border-color: #FA5151;
 }
-.border-blue {
-  border-color: #10AEFF;
+.border-secondary {
+  border-color: #B2B2B2;
+}
+.border-black {
+  border-color: #000000;
+}
+.border-white {
+  border-color: #FFFFFF;
+}
+.border-light {
+  border-color: #F2F2F2;
 }
 .button-clear {
   margin: 0;
