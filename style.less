@@ -20,6 +20,10 @@ each(@color, {
         .@{key} {
             color: @value;
         }
+
+        .bg-@{key} {
+            background-color: @value;
+        }
     }
 
 );
@@ -219,6 +223,22 @@ each(range(20, 40, 2), {
 }
 
 .border {
+    border: 1px solid gray;
+}
+
+.border {
+    &-solid {
+        border-style: solid;
+    }
+
+    &-dashed {
+        border-style: dashed;
+    }
+
+    &-dotted {
+        border-style: dotted;
+    }
+
     &-none {
         border: 0;
     }
