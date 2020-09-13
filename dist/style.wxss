@@ -322,6 +322,24 @@
 .pl-6 {
   padding-left: 6rem;
 }
+.font-small {
+  font-size: 9pt;
+}
+.font-default {
+  font-size: 12pt;
+}
+.font-medium {
+  font-size: 14pt;
+}
+.font-large {
+  font-size: 15pt;
+}
+.font-title {
+  font-size: 17pt;
+}
+.font-huge {
+  font-size: 22pt;
+}
 .f-20 {
   font-size: 20rpx;
 }
@@ -431,6 +449,9 @@
 }
 .border-none {
   border: 0;
+}
+.border-light {
+  border-color: #F2F2F2;
 }
 .border-gray {
   border-color: #B2B2B2;

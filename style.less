@@ -1,4 +1,8 @@
 @percentage: 25, 50, 75, 100;
+@decimal: 25, 50, 75;
+@color: #07C160, #FA5151, #10AEFF, #B2B2B2, #F2F2F2;
+@primary: #07C160;
+
 
 each(@percentage, {
         .w-@{value} {
@@ -16,7 +20,6 @@ each(@percentage, {
 
 );
 
-@decimal: 25, 50, 75;
 
 each(@decimal, {
         .m-0@{value} {
@@ -105,6 +108,31 @@ each(range(0, 6), {
     }
 
 );
+
+
+.font-small {
+    font-size: 9pt;
+}
+
+.font-default {
+    font-size: 12pt;
+}
+
+.font-medium {
+    font-size: 14pt;
+}
+
+.font-large {
+    font-size: 15pt;
+}
+
+.font-title {
+    font-size: 17pt;
+}
+
+.font-huge {
+    font-size: 22pt;
+}
 
 each(range(20, 40, 2), {
         .f-@{value} {
@@ -218,6 +246,10 @@ each(range(20, 40, 2), {
 
 .border-none {
     border: 0;
+}
+
+.border-light {
+    border-color: #F2F2F2;
 }
 
 .border-gray {
