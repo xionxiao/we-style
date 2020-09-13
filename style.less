@@ -10,6 +10,8 @@
     danger: #FA5151;
     secondary: #B2B2B2;
     black: #000000;
+    semi: #353535;
+    gray: #888888;
     white: #FFFFFF;
     light: #F2F2F2;
 }
@@ -216,7 +218,6 @@ each(range(20, 40, 2), {
     }
 }
 
-
 .border {
     &-none {
         border: 0;
@@ -226,25 +227,42 @@ each(range(20, 40, 2), {
         border: 0;
     }
 
-    each(@direction, {
-            &-@{value}-0 {
-                border-@{value}-width: unit(0, px);
-            }
-        }
+    &-top-0 {
+        border-top-width: 0;
+    }
 
-    );
+    &-right-0 {
+        border-right-width: 0;
+    }
+
+    &-bottom-0 {
+        border-bottom-width: 0;
+    }
+
+    &-left-0 {
+        border-left-width: 0;
+    }
 
     &-1 {
         border-width: 1px;
     }
 
-    each(@direction, {
-            &-@{value}-1 {
-                border-@{value}-width: unit(1, px);
-            }
-        }
+    &-top-1 {
+        border-top-width: 1px;
+    }
 
-    );
+    &-right-1 {
+        border-right-width: 1px;
+    }
+
+    &-bottom-1 {
+        border-bottom-width: 1px;
+    }
+
+    &-left-1 {
+        border-left-width: 1px;
+    }
+
 
     each(@color, {
             &-@{key} {
@@ -253,6 +271,10 @@ each(range(20, 40, 2), {
         }
 
     )
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 .button-clear {
