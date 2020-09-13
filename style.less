@@ -216,54 +216,35 @@ each(range(20, 40, 2), {
     }
 }
 
+
 .border {
-    &-0 {
-        border: 0;
-    }
-
-    &-0 {
-        border: 0px solid black;
-    }
-
-    &-top-0 {
-        border-top: 0px solid black;
-    }
-
-    &-bottom-0 {
-        border-bottom: 0px solid black;
-    }
-
-    &-right-0 {
-        border-right: 0px solid black;
-    }
-
-    &-left-0 {
-        border-left: 0px solid black;
-    }
-
-    &-1 {
-        border: 1px solid black;
-    }
-
-    &-top-1 {
-        border-top: 1px solid black;
-    }
-
-    &-bottom-1 {
-        border-bottom: 1px solid black;
-    }
-
-    &-right-1 {
-        border-right: 1px solid black;
-    }
-
-    &-left-1 {
-        border-left: 1px solid black;
-    }
-
     &-none {
         border: 0;
     }
+
+    &-0 {
+        border: 0;
+    }
+
+    each(@direction, {
+            &-@{value}-0 {
+                border-@{value}-width: unit(0, px);
+            }
+        }
+
+    );
+
+    &-1 {
+        border-width: 1px;
+    }
+
+    each(@direction, {
+            &-@{value}-1 {
+                border-@{value}-width: unit(1, px);
+            }
+        }
+
+    );
 
     each(@color, {
             &-@{key} {
