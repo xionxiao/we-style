@@ -17,7 +17,7 @@
 }
 
 each(@color, {
-        .@{key} {
+        .text-@{key} {
             color: @value;
         }
 
@@ -133,7 +133,6 @@ each(range(0, 6), {
 
 );
 
-
 .font-small {
     font-size: 9pt;
 }
@@ -211,6 +210,11 @@ each(range(20, 40, 2), {
         justify-content: flex-end;
     }
 
+    &-center {
+        .flex();
+        justify-content: center;
+    }
+
     &-between {
         .flex();
         justify-content: space-between;
@@ -219,6 +223,21 @@ each(range(20, 40, 2), {
     &-around {
         .flex();
         justify-content: space-around;
+    }
+
+    &-align-start {
+        .flex();
+        align-items: flex-start;
+    }
+
+    &-align-end {
+        .flex();
+        align-items: flex-start;
+    }
+
+    &-align-center {
+        .flex();
+        align-items: center;
     }
 }
 
@@ -295,6 +314,10 @@ each(range(20, 40, 2), {
 
 .circle {
     border-radius: 50%;
+}
+
+.rounded-small {
+    border-radius: 8rpx;
 }
 
 .rounded {
