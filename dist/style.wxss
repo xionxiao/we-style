@@ -1,9 +1,21 @@
 /* reference: https://developers.weixin.qq.com/miniprogram/design */
+.text-blue {
+  color: #10AEFF;
+}
+.bg-blue {
+  background-color: #10AEFF;
+}
 .text-primary {
   color: #10AEFF;
 }
 .bg-primary {
   background-color: #10AEFF;
+}
+.text-green {
+  color: #07C160;
+}
+.bg-green {
+  background-color: #07C160;
 }
 .text-success {
   color: #07C160;
@@ -11,11 +23,23 @@
 .bg-success {
   background-color: #07C160;
 }
+.text-orange {
+  color: #C87D2F;
+}
+.bg-orange {
+  background-color: #C87D2F;
+}
 .text-warning {
   color: #C87D2F;
 }
 .bg-warning {
   background-color: #C87D2F;
+}
+.text-red {
+  color: #FA5151;
+}
+.bg-red {
+  background-color: #FA5151;
 }
 .text-danger {
   color: #FA5151;
@@ -505,6 +529,22 @@
   display: flex;
   align-items: center;
 }
+.flex-grow-0 {
+  display: flex;
+  flex-grow: 0;
+}
+.flex-grow-1 {
+  display: flex;
+  flex-grow: 1;
+}
+.flex-grow-2 {
+  display: flex;
+  flex-grow: 2;
+}
+.flex-grow-3 {
+  display: flex;
+  flex-grow: 3;
+}
 .border {
   border: 1px solid gray;
 }
@@ -550,14 +590,26 @@
 .border-left-1 {
   border-left-width: 1px;
 }
+.border-blue {
+  border-color: #10AEFF;
+}
 .border-primary {
   border-color: #10AEFF;
+}
+.border-green {
+  border-color: #07C160;
 }
 .border-success {
   border-color: #07C160;
 }
+.border-orange {
+  border-color: #C87D2F;
+}
 .border-warning {
   border-color: #C87D2F;
+}
+.border-red {
+  border-color: #FA5151;
 }
 .border-danger {
   border-color: #FA5151;

@@ -4,9 +4,13 @@
 
 /* reference: https://developers.weixin.qq.com/miniprogram/design */
 @color: {
+    blue: #10AEFF;
     primary: #10AEFF;
+    green: #07C160;
     success: #07C160;
+    orange: #C87D2F;
     warning: #C87D2F;
+    red: #FA5151;
     danger: #FA5151;
     black: #000000;
     semi: #353535;
@@ -250,6 +254,13 @@ each(range(20, 40, 2), {
         .flex();
         align-items: center;
     }
+
+    each(range(0,3), {
+        &-grow-@{value} {
+            .flex();
+            flex-grow: @value;
+        }
+    })
 }
 
 .border {
