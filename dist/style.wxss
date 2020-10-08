@@ -638,13 +638,13 @@
 .circle {
   border-radius: 50%;
 }
-.rounded-small {
+.round-small {
   border-radius: 8rpx;
 }
-.rounded {
+.round {
   border-radius: 16rpx;
 }
-.rounded-large {
+.round-large {
   border-radius: 32rpx;
 }
 .shadow {
