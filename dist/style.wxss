@@ -419,6 +419,9 @@
 .font-default {
   font-size: 12pt;
 }
+.fond-normal {
+  font-size: 12pt;
+}
 .font-medium {
   font-size: 14pt;
 }
