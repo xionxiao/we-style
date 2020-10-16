@@ -2,22 +2,35 @@
 @decimal: 25, 50, 75;
 @direction: top, right, bottom, left;
 
+page {
+    --red: #FA5151;
+    --blue: #10AEFF;
+    --green: #07C160;
+    --orange: #C87D2F;
+    --black: #000000;
+    --semi: #353535;
+    --light-gray: #B2B2B2;
+    --gray: #888888;
+    --light: #F2F2F2;
+    --white: #FFFFFF;
+}
+
 /* reference: https://developers.weixin.qq.com/miniprogram/design */
 @color: {
-    blue: #10AEFF;
-    primary: #10AEFF;
-    green: #07C160;
-    success: #07C160;
-    orange: #C87D2F;
-    warning: #C87D2F;
-    red: #FA5151;
-    danger: #FA5151;
-    black: #000000;
-    semi: #353535;
-    gray: #888888;
-    light-gray: #B2B2B2;
-    light: #F2F2F2;
-    white: #FFFFFF;
+    blue: var(--blue);
+    primary: var(--blue);
+    green: var(--green);
+    success: var(--green);
+    orange: var(--orange);
+    warning: var(--orange);
+    red: var(--red);
+    danger: var(--red);
+    black: var(--black);
+    semi: var(--semi);
+    gray: var(--gray);
+    light-gray: var(--light-gray);
+    light: var(--light-gray);
+    white: var(--white);
     transparent: transparent;
 }
 
@@ -251,7 +264,7 @@ each(range(20, 40, 2), {
 
     &-align-end {
         .flex();
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     &-align-center {

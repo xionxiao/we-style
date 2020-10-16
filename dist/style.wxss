@@ -1,87 +1,99 @@
+page {
+  --red: #FA5151;
+  --blue: #10AEFF;
+  --green: #07C160;
+  --orange: #C87D2F;
+  --black: #000000;
+  --semi: #353535;
+  --light-gray: #B2B2B2;
+  --gray: #888888;
+  --light: #F2F2F2;
+  --white: #FFFFFF;
+}
 /* reference: https://developers.weixin.qq.com/miniprogram/design */
 .text-blue {
-  color: #10AEFF;
+  color: var(--blue);
 }
 .bg-blue {
-  background-color: #10AEFF;
+  background-color: var(--blue);
 }
 .text-primary {
-  color: #10AEFF;
+  color: var(--blue);
 }
 .bg-primary {
-  background-color: #10AEFF;
+  background-color: var(--blue);
 }
 .text-green {
-  color: #07C160;
+  color: var(--green);
 }
 .bg-green {
-  background-color: #07C160;
+  background-color: var(--green);
 }
 .text-success {
-  color: #07C160;
+  color: var(--green);
 }
 .bg-success {
-  background-color: #07C160;
+  background-color: var(--green);
 }
 .text-orange {
-  color: #C87D2F;
+  color: var(--orange);
 }
 .bg-orange {
-  background-color: #C87D2F;
+  background-color: var(--orange);
 }
 .text-warning {
-  color: #C87D2F;
+  color: var(--orange);
 }
 .bg-warning {
-  background-color: #C87D2F;
+  background-color: var(--orange);
 }
 .text-red {
-  color: #FA5151;
+  color: var(--red);
 }
 .bg-red {
-  background-color: #FA5151;
+  background-color: var(--red);
 }
 .text-danger {
-  color: #FA5151;
+  color: var(--red);
 }
 .bg-danger {
-  background-color: #FA5151;
+  background-color: var(--red);
 }
 .text-black {
-  color: #000000;
+  color: var(--black);
 }
 .bg-black {
-  background-color: #000000;
+  background-color: var(--black);
 }
 .text-semi {
-  color: #353535;
+  color: var(--semi);
 }
 .bg-semi {
-  background-color: #353535;
+  background-color: var(--semi);
 }
 .text-gray {
-  color: #888888;
+  color: var(--gray);
 }
 .bg-gray {
-  background-color: #888888;
+  background-color: var(--gray);
 }
 .text-light-gray {
-  color: #B2B2B2;
+  color: var(--light-gray);
 }
 .bg-light-gray {
-  background-color: #B2B2B2;
+  background-color: var(--light-gray);
 }
 .text-light {
-  color: #F2F2F2;
+  color: var(--light-gray);
 }
 .bg-light {
-  background-color: #F2F2F2;
+  background-color: var(--light-gray);
 }
 .text-white {
-  color: #FFFFFF;
+  color: var(--white);
 }
 .bg-white {
-  background-color: #FFFFFF;
+  background-color: var(--white);
 }
 .text-transparent {
   color: transparent;
@@ -526,7 +538,7 @@
 }
 .flex-align-end {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .flex-align-center {
   display: flex;
@@ -594,46 +606,46 @@
   border-left-width: 1px;
 }
 .border-blue {
-  border-color: #10AEFF;
+  border-color: var(--blue);
 }
 .border-primary {
-  border-color: #10AEFF;
+  border-color: var(--blue);
 }
 .border-green {
-  border-color: #07C160;
+  border-color: var(--green);
 }
 .border-success {
-  border-color: #07C160;
+  border-color: var(--green);
 }
 .border-orange {
-  border-color: #C87D2F;
+  border-color: var(--orange);
 }
 .border-warning {
-  border-color: #C87D2F;
+  border-color: var(--orange);
 }
 .border-red {
-  border-color: #FA5151;
+  border-color: var(--red);
 }
 .border-danger {
-  border-color: #FA5151;
+  border-color: var(--red);
 }
 .border-black {
-  border-color: #000000;
+  border-color: var(--black);
 }
 .border-semi {
-  border-color: #353535;
+  border-color: var(--semi);
 }
 .border-gray {
-  border-color: #888888;
+  border-color: var(--gray);
 }
 .border-light-gray {
-  border-color: #B2B2B2;
+  border-color: var(--light-gray);
 }
 .border-light {
-  border-color: #F2F2F2;
+  border-color: var(--light-gray);
 }
 .border-white {
-  border-color: #FFFFFF;
+  border-color: var(--white);
 }
 .border-transparent {
   border-color: transparent;
