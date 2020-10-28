@@ -277,6 +277,10 @@ each(range(20, 40, 2), {
             .flex();
             flex-grow: @value;
         }
+
+        &-@{value} {
+            flex: @value;
+        }
     })
 }
 

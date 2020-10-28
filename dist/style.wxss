@@ -548,17 +548,29 @@ page {
   display: flex;
   flex-grow: 0;
 }
+.flex-0 {
+  flex: 0;
+}
 .flex-grow-1 {
   display: flex;
   flex-grow: 1;
+}
+.flex-1 {
+  flex: 1;
 }
 .flex-grow-2 {
   display: flex;
   flex-grow: 2;
 }
+.flex-2 {
+  flex: 2;
+}
 .flex-grow-3 {
   display: flex;
   flex-grow: 3;
+}
+.flex-3 {
+  flex: 3;
 }
 .border {
   border: 1px solid gray;
