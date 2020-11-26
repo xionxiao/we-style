@@ -715,3 +715,8 @@ html {
   border: none;
   content: "";
 }
+@media print {
+  .noprint {
+    display: none;
+  }
+}

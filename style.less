@@ -404,7 +404,6 @@ each(range(20, 40, 2), {
     box-shadow: 8rpx 8rpx 48rpx 0 #ddd;
 }
 
-
 .button-clear {
     margin: 0;
     padding: 0;
@@ -419,4 +418,10 @@ each(range(20, 40, 2), {
     height: 0;
     border: none;
     content: "";
+}
+
+@media print {
+    .noprint {
+        display: none;
+    }
 }
