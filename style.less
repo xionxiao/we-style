@@ -235,6 +235,7 @@ each(range(20, 40, 2), {
 }
 
 .flex {
+    /* flex container */
     &-row {
         .flex();
         flex-direction: row;
@@ -285,16 +286,32 @@ each(range(20, 40, 2), {
         align-items: center;
     }
 
+    /* flex items */
     each(range(0,3), {
         &-grow-@{value} {
-            .flex();
             flex-grow: @value;
         }
 
         &-@{value} {
             flex: @value;
         }
+
+        &-shrink-@{value} {
+            flex-shrink: @value;
+        }
     })
+
+    &-self-start {
+        align-self: flex-start;
+    }
+
+    &-self-end {
+        align-self: flex-end;
+    }
+
+    &-self-center {
+        align-self: center;
+    }
 }
 
 .border {
