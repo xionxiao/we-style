@@ -1,6 +1,6 @@
 # we-style
 
-Common Style for wechart miniapp
+Common Style for wechat miniapp
 
 ## How to build
 
