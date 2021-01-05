@@ -61,7 +61,7 @@ each(@color, {
 
 each(@percentage, {
         .w-@{value} {
-            width: percentage(@value / 100)
+            width: percentage((@value/100))
         }
     }
 
@@ -69,7 +69,7 @@ each(@percentage, {
 
 each(@percentage, {
         .h-@{value} {
-            height: percentage(@value / 100)
+            height: percentage((@value/100))
         }
     }
 
@@ -78,43 +78,43 @@ each(@percentage, {
 
 each(@decimal, {
         .m-0@{value} {
-            margin: unit(@value/100, rem);
+            margin: unit((@value/100), rem);
         }
 
         .mt-0@{value} {
-            margin-top: unit(@value/100, rem)
+            margin-top: unit((@value/100), rem)
         }
 
         .mb-0@{value} {
-            margin-bottom: unit(@value/100, rem)
+            margin-bottom: unit((@value/100), rem)
         }
 
         .mr-0@{value} {
-            margin-right: unit(@value/100, rem);
+            margin-right: unit((@value/100), rem);
         }
 
         .ml-0@{value} {
-            margin-left: unit(@value/100, rem);
+            margin-left: unit((@value/100), rem);
         }
 
         .p-0@{value} {
-            padding: unit(@value/100, rem);
+            padding: unit((@value/100), rem);
         }
 
         .pt-0@{value} {
-            padding-top: unit(@value/100, rem);
+            padding-top: unit((@value/100), rem);
         }
 
         .pb-0@{value} {
-            padding-bottom: unit(@value/100, rem);
+            padding-bottom: unit((@value/100), rem);
         }
 
         .pr-0@{value} {
-            padding-right: unit(@value/100, rem);
+            padding-right: unit((@value/100), rem);
         }
 
         .pl-0@{value} {
-            padding-left: unit(@value/100, rem);
+            padding-left: unit((@value/100), rem);
         }
     }
 
@@ -235,7 +235,6 @@ each(range(20, 40, 2), {
 }
 
 .flex {
-    /* flex container */
     &-row {
         .flex();
         flex-direction: row;
@@ -286,7 +285,6 @@ each(range(20, 40, 2), {
         align-items: center;
     }
 
-    /* flex items */
     each(range(0,3), {
         &-grow-@{value} {
             flex-grow: @value;
