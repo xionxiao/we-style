@@ -197,7 +197,6 @@ each(range(20, 40, 2), {
             font-size: unit(@value, rpx);
         }
     }
-
 );
 
 .text {
@@ -392,40 +391,42 @@ each(range(20, 40, 2), {
 }
 
 .round-small {
-    border-radius: 8rpx;
+    border-radius: 4px;
 }
 
 .round {
-    border-radius: 16rpx;
+    border-radius: 8px;
 }
 
 .round-large {
-    border-radius: 32rpx;
+    border-radius: 16px;
 }
 
 .shadow {
-    box-shadow: 0 0 16rpx 0 #ddd;
+    box-shadow: 0 0 8px 0 #ddd;
 }
 
 .shadow-thin {
-    box-shadow: 0 0 8rpx 0 #ddd;
+    box-shadow: 0 0 4px 0 #ddd;
 }
 
 .shadow-thick {
-    box-shadow: 0 0 32rpx 0 #ddd;
+    box-shadow: 0 0 16px 0 #ddd;
 }
 
 .drop-shadow {
-    box-shadow: 4rpx 4rpx 16rpx 0 #ddd;
+    box-shadow: 2px 2px 8px 0 #ddd;
 }
 
 .drop-shadow-thick {
-    box-shadow: 8rpx 8rpx 48rpx 0 #ddd;
+    box-shadow: 4px 4px 24px 0 #ddd;
 }
 
 .button-clear {
-    margin: 0;
-    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
     font-size: inherit;
     line-height: inherit;
