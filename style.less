@@ -288,6 +288,16 @@ each(range(10, 40), {
         align-items: center;
     }
 
+    &-wrap {
+        .flex();
+        flex-wrap: wrap;
+    }
+
+    &-nowrap {
+        .flex();
+        flex-wrap: nowrap;
+    }
+
     each(range(0,3), {
         &-grow-@{value} {
             flex-grow: @value;

@@ -619,6 +619,14 @@ html {
   display: flex;
   align-items: center;
 }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
 .flex-grow-0 {
   flex-grow: 0;
 }
