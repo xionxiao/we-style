@@ -113,6 +113,9 @@ html {
 .bg-transparent {
   background-color: transparent;
 }
+.w-0 {
+  width: 0%;
+}
 .w-25 {
   width: 25%;
 }
@@ -124,6 +127,9 @@ html {
 }
 .w-100 {
   width: 100%;
+}
+.h-0 {
+  height: 0%;
 }
 .h-25 {
   height: 25%;
